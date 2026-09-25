@@ -1,0 +1,887 @@
+{
+  "app": {
+    "tagline": "Local all-in-one toolkit"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "copied": "Copied to clipboard",
+    "copy": "Copy",
+    "open": "Open",
+    "open_folder": "Open folder",
+    "remove": "Remove",
+    "reveal": "Show in Finder",
+    "input": "Input",
+    "output": "Output",
+    "paste": "Paste",
+    "swap": "Swap",
+    "sample": "Sample",
+    "save": "Save",
+    "saved": "Saved to {path}",
+    "open_file": "Open file",
+    "export_html": "Export HTML",
+    "undo": "Undo",
+    "chars": "{n} characters",
+    "chars_unit": "chars",
+    "bytes": "{n} bytes",
+    "not_text": "Not a text file",
+    "drop_to_open": "Drop to open",
+    "preview_unavailable": "Embedded preview isn't available here"
+  },
+  "nav": {
+    "home": "Home",
+    "tasks": "Tasks",
+    "settings": "Settings",
+    "search": "Search tools…",
+    "engine_missing": "FFmpeg not found",
+    "engine_detecting": "Detecting engine…"
+  },
+  "palette": {
+    "hint": "Search tools and pages…",
+    "empty": "No matching tools"
+  },
+  "categories": {
+    "media": "Media",
+    "image": "Image",
+    "data": "Data & JSON",
+    "web": "Web dev",
+    "encode": "Encode & crypto",
+    "text": "Text",
+    "generate": "Generate & time",
+    "file": "Files"
+  },
+  "home": {
+    "title": "What are we working on today?",
+    "subtitle": "Everything runs locally — nothing is uploaded · {n} tools ready",
+    "search": "Search tools — try “compress”, “GIF”, “extract audio”",
+    "recent": "Recently used",
+    "soon": "Coming soon",
+    "coming_soon_toast": "This tool is on the roadmap — coming soon",
+    "engine": "Media engine",
+    "engine_missing": "FFmpeg not installed",
+    "gpu": "Hardware acceleration",
+    "gpu_none": "Unavailable (CPU)",
+    "tasks": "Tasks",
+    "tasks_value": "{active} active · {done} done",
+    "drop_title": "Drop any file",
+    "drop_hint": "Video & audio open the media studio; JSON, YAML, CSV, Markdown and HTML open their tools; anything else gets checksummed"
+  },
+  "tools": {
+    "convert": {
+      "name": "Convert",
+      "desc": "Change container & codec, GPU accelerated"
+    },
+    "compress": {
+      "name": "Compress",
+      "desc": "Shrink by quality or to a target size"
+    },
+    "trim": {
+      "name": "Trim",
+      "desc": "Cut a segment, lossless or frame-accurate"
+    },
+    "audio": {
+      "name": "Audio",
+      "desc": "Extract, convert and normalize audio"
+    },
+    "gif": {
+      "name": "GIF Maker",
+      "desc": "High-quality palette GIFs"
+    },
+    "transform": {
+      "name": "Speed & Transform",
+      "desc": "Speed, rotate, flip, reframe to vertical"
+    },
+    "concat": {
+      "name": "Merge",
+      "desc": "Join clips in order"
+    },
+    "frames": {
+      "name": "Frames",
+      "desc": "Snapshots, interval frames, contact sheets"
+    },
+    "inspect": {
+      "name": "Media Info",
+      "desc": "Inspect container and every stream"
+    },
+    "cli": {
+      "name": "Command Line",
+      "desc": "Run custom FFmpeg arguments as tasks"
+    },
+    "image_convert": {
+      "name": "Image Compress & Convert",
+      "desc": "HEIC / WebP / PNG → JPG, AVIF; batch resize; strips EXIF"
+    },
+    "json": {
+      "name": "JSON Formatter",
+      "desc": "Format, minify, validate, tree view & JSONPath"
+    },
+    "json_diff": {
+      "name": "JSON Diff",
+      "desc": "Structural diff that ignores key order"
+    },
+    "json_yaml": {
+      "name": "JSON ↔ YAML",
+      "desc": "Convert between JSON and YAML"
+    },
+    "json_code": {
+      "name": "JSON to Code",
+      "desc": "TypeScript / Dart / Go / Swift / Kotlin models"
+    },
+    "csv_json": {
+      "name": "CSV ↔ JSON",
+      "desc": "Convert tables and JSON, with a grid preview"
+    },
+    "html_preview": {
+      "name": "HTML Playground",
+      "desc": "Live HTML + CSS + JS with a console"
+    },
+    "js_runner": {
+      "name": "JS Runner",
+      "desc": "Run JavaScript locally, see logs and results"
+    },
+    "markdown": {
+      "name": "Markdown Editor",
+      "desc": "Write with live preview, export HTML"
+    },
+    "css": {
+      "name": "CSS Formatter",
+      "desc": "Beautify or minify stylesheets"
+    },
+    "color": {
+      "name": "Color Tools",
+      "desc": "Picker, conversions, contrast check"
+    },
+    "regex": {
+      "name": "Regex Tester",
+      "desc": "Live matches, groups and replace"
+    },
+    "base64": {
+      "name": "Base64",
+      "desc": "Text & file encoding with image preview"
+    },
+    "encode": {
+      "name": "Encode / Decode",
+      "desc": "URL, HTML entities, Unicode, hex, binary"
+    },
+    "url": {
+      "name": "URL Parser",
+      "desc": "Break a URL into parts and query params"
+    },
+    "hash": {
+      "name": "Hash & Checksum",
+      "desc": "MD5 / SHA / CRC32, HMAC, file checksums"
+    },
+    "number_base": {
+      "name": "Number Base",
+      "desc": "Binary, octal, decimal, hex and a bit view"
+    },
+    "timestamp": {
+      "name": "Timestamp",
+      "desc": "Unix time ↔ date"
+    },
+    "jwt": {
+      "name": "JWT",
+      "desc": "Decode, verify and sign JWTs"
+    },
+    "diff": {
+      "name": "Text Diff",
+      "desc": "Side-by-side comparison down to words"
+    },
+    "case": {
+      "name": "Case Converter",
+      "desc": "camelCase, snake_case, kebab-case and more"
+    },
+    "text_tools": {
+      "name": "Text Tools",
+      "desc": "Count, sort, dedupe and clean up text"
+    },
+    "lorem": {
+      "name": "Lorem Ipsum",
+      "desc": "Placeholder text in Latin or Chinese"
+    },
+    "uuid": {
+      "name": "UUID Generator",
+      "desc": "UUID v4/v7, ULID, Nano ID"
+    },
+    "password": {
+      "name": "Password Generator",
+      "desc": "Secure random passwords with strength"
+    },
+    "qrcode": {
+      "name": "QR Code",
+      "desc": "Text, link and Wi-Fi codes, export PNG"
+    },
+    "cron": {
+      "name": "Cron",
+      "desc": "Parse expressions and preview next runs"
+    },
+    "rename": {
+      "name": "Batch Rename",
+      "desc": "Rule-based batch renaming"
+    },
+    "duplicates": {
+      "name": "Find Duplicates",
+      "desc": "Find duplicate files by content"
+    }
+  },
+  "media": {
+    "options": "Options",
+    "advanced": "Advanced",
+    "original": "Original",
+    "auto": "Auto",
+    "file": "File",
+    "files_count": "{n} files",
+    "add_files": "Add files",
+    "replace": "Replace",
+    "probing": "Reading media info…",
+    "unreadable": "Unreadable",
+    "unreadable_skipped": "{n} file(s) couldn't be read and will be skipped",
+    "ignored_files": "Ignored {n} unsupported file(s)",
+    "queued": "{n} task(s) queued",
+    "view_tasks": "View",
+    "output_to": "Output to",
+    "output_next_to_source": "Same folder as source",
+    "output_choose": "Choose folder…",
+    "command": "Command",
+    "output_preview": "Output preview",
+    "more_outputs": "and {n} more",
+    "more_commands": "+{n} similar command(s), one per file",
+    "drop": {
+      "title": "Drop a file here",
+      "title_multi": "Drop files here — multiple supported",
+      "release": "Release to add",
+      "or": "or ",
+      "browse": "browse your computer",
+      "more": "Drop more files anytime"
+    },
+    "accept": {
+      "video": "MP4, MOV, MKV, WebM, AVI and more",
+      "audio": "MP3, M4A, WAV, FLAC and more",
+      "media": "Common video and audio formats",
+      "any": "Any file (optional)"
+    },
+    "engine_missing": {
+      "title": "FFmpeg not found",
+      "message": "The built-in FFmpeg is missing (in development run scripts/build_ffmpeg.sh) and no system FFmpeg was found. Install one temporarily or point to its folder in Settings.",
+      "retry": "Detect again",
+      "settings": "Open settings"
+    },
+    "quality": {
+      "label": "Quality",
+      "high": "High",
+      "balanced": "Balanced",
+      "small": "Small"
+    },
+    "resolution": {
+      "label": "Resolution",
+      "hint": "Scales the short side; never upscales"
+    },
+    "gpu": {
+      "label": "GPU acceleration",
+      "hint": "Prefer VideoToolbox / NVENC hardware encoders when available — much faster"
+    },
+    "convert": {
+      "action": "Convert · {n}",
+      "container": "Container",
+      "codec": "Video codec",
+      "codec_unavailable": "Not supported by this FFmpeg build",
+      "copy": "Stream copy",
+      "copy_hint": "No re-encode, just remux — instant",
+      "fps": "Frame rate",
+      "audio": "Audio",
+      "audio_auto": "Re-encode",
+      "audio_copy": "Keep",
+      "audio_remove": "Remove",
+      "speed": "Encoding speed",
+      "speed_hint": "Slower gives smaller files (CPU encoders only)",
+      "speed_fast": "Fast",
+      "speed_medium": "Medium",
+      "speed_slow": "Slow"
+    },
+    "compress": {
+      "action": "Compress · {n}",
+      "mode": "Mode",
+      "by_quality": "By quality",
+      "by_size": "Target size",
+      "level": "Strength",
+      "level_hint": "Stronger = smaller file, more quality loss",
+      "light": "Light",
+      "standard": "Standard",
+      "strong": "Strong",
+      "codec": "Codec",
+      "h264": "H.264 · plays everywhere",
+      "hevc": "HEVC · smaller",
+      "target": "Target size",
+      "target_hint": "Two-pass encoding; the result never exceeds this size",
+      "custom_mb": "Custom size",
+      "budget": "Video {video} kbps + audio {audio} kbps",
+      "will_downscale": "Low bitrate — will downscale to {res}",
+      "auto_res_hint": "“Auto” lowers resolution when the bitrate is too thin",
+      "source_size": "Original size {size}"
+    },
+    "trim": {
+      "action": "Trim",
+      "mode": "Cut mode",
+      "fast": "Fast & lossless",
+      "precise": "Frame-accurate",
+      "fast_hint": "No re-encode, finishes in seconds; start snaps to the nearest keyframe.",
+      "precise_hint": "Re-encodes for frame accuracy; slower, outputs MP4.",
+      "range": "Range",
+      "start": "Start",
+      "end": "End",
+      "length": "Length {len}"
+    },
+    "audio": {
+      "action": "Process · {n}",
+      "format": "Format",
+      "lossless": "Lossless",
+      "original": "Original",
+      "original_hint": "Extract the audio track bit-exact, no re-encode",
+      "bitrate": "Bitrate (kbps)",
+      "sample_rate": "Sample rate",
+      "channels": "Channels",
+      "mono": "Mono",
+      "stereo": "Stereo",
+      "normalize": "Loudness normalization",
+      "normalize_hint": "EBU R128 to -16 LUFS — great for podcasts and streaming",
+      "gain": "Volume gain"
+    },
+    "gif": {
+      "action": "Make GIF · {n}",
+      "start": "Start time",
+      "duration": "Duration",
+      "fps": "Frame rate",
+      "fps_hint": "Higher is smoother but larger",
+      "width": "Width",
+      "dither": "Dithering",
+      "dither_hint": "Affects gradients and file size",
+      "dither_smooth": "Smooth",
+      "dither_pattern": "Pattern",
+      "dither_diffuse": "Diffuse",
+      "dither_none": "None",
+      "loop": "Loop forever",
+      "first_frame": "First frame",
+      "segment": "Segment",
+      "segment_selection": "From the timeline selection",
+      "segment_playhead": "No selection: 5 s from the playhead. Drag the timeline handles to choose."
+    },
+    "transform": {
+      "action": "Process · {n}",
+      "speed": "Speed",
+      "speed_hint": "Audio follows, pitch preserved",
+      "rotate": "Rotate",
+      "rotate_none": "None",
+      "flip": "Flip",
+      "flip_h": "Horizontal",
+      "flip_v": "Vertical",
+      "framing": "Aspect",
+      "framing_hint": "Fills with a blurred background — for TikTok, Shorts, Reels",
+      "vertical": "Vertical 9:16",
+      "square": "Square 1:1",
+      "landscape": "Landscape 16:9",
+      "mute": "Remove audio"
+    },
+    "concat": {
+      "action": "Merge",
+      "mode": "Mode",
+      "compatible": "Compatible",
+      "fast": "Fast",
+      "compatible_hint": "Normalizes size and frame rate, then re-encodes — works with any clips. Drag handles to reorder.",
+      "fast_hint": "Joins without re-encoding. All clips must share codec, resolution and frame rate.",
+      "clips": "Clips",
+      "total": "Total length",
+      "order": "Order",
+      "need_two": "Add at least 2 files to the library above"
+    },
+    "frames": {
+      "action": "Extract · {n}",
+      "mode": "Mode",
+      "single": "Snapshot",
+      "interval": "Every N seconds",
+      "sheet": "Contact sheet",
+      "at": "At time",
+      "every": "Interval",
+      "every_n": "Every {n}s",
+      "grid": "Grid",
+      "width": "Image width",
+      "tile_width": "Tile width",
+      "format": "Image format",
+      "preview": "Preview"
+    },
+    "inspect": {
+      "container": "Container",
+      "duration": "Duration",
+      "size": "Size",
+      "bitrate": "Bitrate",
+      "path": "Path",
+      "tags": "Metadata tags",
+      "raw": "Raw data (ffprobe JSON)",
+      "show_json": "Show JSON",
+      "video": "Video",
+      "audio": "Audio",
+      "subtitle": "Subtitle",
+      "data": "Data",
+      "cover": "Cover art",
+      "default": "Default",
+      "codec": "Codec",
+      "resolution": "Resolution",
+      "fps": "Frame rate",
+      "pixfmt": "Pixel format",
+      "transfer": "Transfer",
+      "sample_rate": "Sample rate",
+      "channels": "Channels",
+      "language": "Language",
+      "title": "Title"
+    },
+    "cli": {
+      "action": "Run · {n}",
+      "args": "FFmpeg arguments",
+      "args_hint": "Placeholders: {input} file path, {dir} its folder, {name} name without extension. Runs once per file.",
+      "templates": "Templates",
+      "tpl_remux": "Remux to MKV",
+      "tpl_reverse": "Reverse",
+      "tpl_denoise": "Denoise",
+      "tpl_subs": "Export subtitles",
+      "tpl_waveform": "Waveform image",
+      "tpl_stabilize": "Stabilize"
+    },
+    "errors": {
+      "encoder_missing": "This FFmpeg build lacks the {codec} encoder",
+      "unknown_duration": "Couldn't determine the duration",
+      "target_too_small": "Target too small — needs at least ~{min} MB",
+      "invalid_range": "Invalid range",
+      "no_audio": "The file has no audio",
+      "no_video": "The file has no video",
+      "nothing_to_do": "Pick at least one change",
+      "invalid_speed": "Speed must be between 0.25× and 4×",
+      "need_two_files": "Add at least 2 files",
+      "probe_pending": "Reading media info…",
+      "invalid_interval": "Invalid interval",
+      "bad_quotes": "Unterminated quote",
+      "empty_command": "Enter some arguments",
+      "cli_needs_input": "The template uses {input} — add a file first",
+      "size_exceeded": "Couldn't fit the target ({size} MB > {limit} MB) — lower the resolution or raise the target"
+    }
+  },
+  "image": {
+    "action": "Process · {n}",
+    "format": "Output format",
+    "avif_hint": "Often a third of JPEG's size; supported by modern browsers and OSes",
+    "lossless": "Lossless",
+    "keep_format": "Keep format",
+    "quality": "Quality",
+    "quality_hint": "Around 80 looks identical at a fraction of the size",
+    "max_side": "Longest side",
+    "max_side_hint": "Only shrinks, never enlarges",
+    "privacy": "EXIF and GPS metadata are removed; orientation is baked in",
+    "drop": "Drop images",
+    "drop_hint": "HEIC, JPG, PNG, WebP, AVIF, TIFF… drop as many as you like"
+  },
+  "studio": {
+    "title": "Media Studio",
+    "subtitle": "Drop a video once — convert, compress, trim, GIF, snapshot… all in one place",
+    "sidebar_hint": "Drop a video to start",
+    "files_loaded": "{n} file(s) loaded",
+    "drop_title": "Drop a video or audio file",
+    "drop_add": "Release to add to the library",
+    "capabilities": "Once loaded you can",
+    "close_all": "Close all",
+    "audio_only": "Audio file",
+    "in": "In",
+    "out": "Out",
+    "length": "Selection",
+    "mark_in": "Set in · I",
+    "mark_out": "Set out · O",
+    "clear_range": "Select all",
+    "range_hint": "Drag the timeline handles or press I / O at the playhead; ← → step frames",
+    "range_only": "Selection only {from}–{to}",
+    "range_only_hint": "Process only the selected part of the timeline",
+    "scope_current": "This file",
+    "scope_all": "All {n}",
+    "frame_at_playhead": "Captures the frame at the playhead — click or drag the timeline",
+    "tabs": {
+      "convert": "Convert",
+      "compress": "Compress",
+      "trim": "Trim",
+      "audio": "Audio",
+      "gif": "GIF",
+      "transform": "Transform",
+      "concat": "Merge",
+      "frames": "Frames",
+      "inspect": "Info",
+      "cli": "CLI"
+    },
+    "errors": {
+      "need_range": "Select the part to keep on the timeline first"
+    }
+  },
+  "json": {
+    "format": "Format",
+    "minify": "Minify",
+    "escape": "Escape",
+    "unescape": "Unescape",
+    "indent": "Indent",
+    "sort_keys": "Sort keys",
+    "text": "Text",
+    "tree": "Tree",
+    "hint": "Paste or drop JSON…",
+    "jump": "Go to",
+    "valid": "Valid JSON · {objects} objects · {arrays} arrays · {values} values · depth {depth}",
+    "valid_short": "Valid JSON",
+    "expand_all": "Expand all",
+    "collapse_all": "Collapse all",
+    "copy_path": "Copy path",
+    "copy_value": "Copy value"
+  },
+  "json_diff": {
+    "left": "Original JSON",
+    "right": "New JSON",
+    "result": "Differences",
+    "structural": "Structure",
+    "side_by_side": "Side by side",
+    "added": "Added",
+    "removed": "Removed",
+    "changed": "Changed",
+    "type_changed": "Type changed",
+    "identical": "The two documents are structurally identical",
+    "fix_input": "Both sides need to be valid JSON",
+    "key_order_ignored": "Key order ignored"
+  },
+  "json_code": {
+    "root": "Root type",
+    "hint": "Array items are merged; missing fields become optional"
+  },
+  "csv": {
+    "delimiter": "Delimiter",
+    "infer": "Infer types",
+    "table": "Table",
+    "rows": "{n} data rows"
+  },
+  "html_preview": {
+    "preview": "Preview",
+    "console": "Console",
+    "run": "Run",
+    "auto": "Auto refresh",
+    "console_empty": "console.log output shows up here"
+  },
+  "js_runner": {
+    "run": "Run ⌘↩",
+    "hint": "⌘ Enter to run · the last expression is the result · every run is a fresh sandbox",
+    "empty": "Press Run — output appears here",
+    "engine": "Engine: JavaScriptCore (built into macOS), 5 s time limit",
+    "unavailable": "No JavaScript engine available on this system",
+    "done": "Finished",
+    "failed": "Error",
+    "timeout": "Timed out",
+    "sample_basics": "Basics: arrays & objects",
+    "sample_async": "Async: promises & timers",
+    "sample_classes": "Classes & collections"
+  },
+  "markdown": {
+    "edit": "Edit",
+    "split": "Split",
+    "stats": "{words} words · {chars} chars · ~{min} min read",
+    "heading": "Heading",
+    "bold": "Bold",
+    "italic": "Italic",
+    "strike": "Strikethrough",
+    "code": "Inline code",
+    "link": "Link",
+    "image": "Image",
+    "list": "Bulleted list",
+    "numbered": "Numbered list",
+    "task": "Task list",
+    "quote": "Quote",
+    "code_block": "Code block",
+    "table": "Table",
+    "hr": "Divider"
+  },
+  "color": {
+    "picker": "Picker",
+    "formats": "Formats",
+    "contrast": "Contrast (WCAG)",
+    "scale": "Tints & shades — click to use",
+    "invalid": "Unrecognized colour"
+  },
+  "regex": {
+    "pattern_hint": "Regular expression",
+    "matches": "{n} match(es)",
+    "library": "Common patterns",
+    "test_text": "Test text",
+    "match_list": "Matches",
+    "replace": "Replace",
+    "flag_i": "Ignore case",
+    "flag_m": "Multiline: ^ and $ match each line",
+    "flag_s": "Dot matches newlines",
+    "flag_u": "Unicode"
+  },
+  "encode": {
+    "encode": "Encode",
+    "decode": "Decode"
+  },
+  "base64": {
+    "text": "Text",
+    "file": "File",
+    "plain": "Plain text",
+    "url_safe": "URL-safe",
+    "drop": "Drop or choose a file",
+    "drop_hint": "Images are previewed; copy as a data URI",
+    "binary_detected": "Decoded data is a binary file ({type}) — save it as a file",
+    "truncated": "(Truncated to 200,000 characters — Copy gets everything)"
+  },
+  "url": {
+    "parts": "Parts",
+    "params": "Query params · {n}",
+    "no_params": "No query parameters",
+    "invalid": "Not a valid URL",
+    "scheme": "Scheme",
+    "user": "User info",
+    "host": "Host",
+    "port": "Port",
+    "default": "default",
+    "path": "Path",
+    "segments": "Segments",
+    "query": "Query",
+    "fragment": "Fragment",
+    "origin": "Origin"
+  },
+  "jwt": {
+    "decode": "Decode & verify",
+    "encode": "Sign",
+    "token": "Token",
+    "header": "Header",
+    "payload": "Payload",
+    "secret": "Secret (HMAC)",
+    "secret_b64": "Base64 secret",
+    "structure": "header · payload · signature",
+    "expired": "Expired",
+    "valid_until": "Valid",
+    "not_yet": "Not yet valid",
+    "sig_valid": "Signature verified",
+    "sig_invalid": "Invalid signature — wrong secret or tampered token",
+    "sig_unchecked": "Enter the secret to verify the signature",
+    "sig_unsupported": "Can't verify {alg} (HS256/384/512 only)",
+    "open_decoder": "Open in decoder"
+  },
+  "hash": {
+    "digests": "Digests",
+    "hmac_hint": "HMAC key (optional)",
+    "uppercase": "Uppercase",
+    "verify_hint": "Paste an expected hash to verify",
+    "match": "Matches {alg} ✓",
+    "no_match": "No algorithm matches",
+    "drop": "Drop a file to checksum it",
+    "drop_hint": "Streamed — large files are fine",
+    "choose": "Choose file"
+  },
+  "number_base": {
+    "results": "Conversions",
+    "bin": "Binary",
+    "oct": "Octal",
+    "dec": "Decimal",
+    "hex": "Hexadecimal",
+    "char": "Character",
+    "bits": "Bits — click to flip",
+    "too_big": "Doesn't fit in {bits} bits"
+  },
+  "diff": {
+    "original": "Original",
+    "changed": "Changed",
+    "result": "Result",
+    "ignore_space": "Ignore whitespace",
+    "ignore_case": "Ignore case",
+    "only_changes": "Changes only",
+    "identical": "The texts are identical",
+    "copy_patch": "Copy patch"
+  },
+  "case": {
+    "results": "Results — click to copy",
+    "hint": "Each line is converted separately"
+  },
+  "text_tools": {
+    "characters": "Characters",
+    "no_spaces": "No spaces",
+    "words": "Words",
+    "lines": "Lines",
+    "paragraphs": "Paragraphs",
+    "bytes": "UTF-8 size",
+    "reading": "Reading time",
+    "ops": {
+      "sortAsc": "Sort A→Z",
+      "sortDesc": "Sort Z→A",
+      "sortNatural": "Natural sort (file2 < file10)",
+      "sortLength": "Sort by length",
+      "reverse": "Reverse lines",
+      "unique": "Remove duplicates",
+      "removeEmpty": "Remove empty lines",
+      "trim": "Trim lines",
+      "collapseSpaces": "Collapse spaces",
+      "number": "Number lines",
+      "joinLines": "Join lines",
+      "shuffle": "Shuffle"
+    }
+  },
+  "lorem": {
+    "paragraphs": "Paragraphs",
+    "sentences": "Sentences",
+    "regenerate": "Regenerate"
+  },
+  "uuid": {
+    "count": "Count",
+    "hyphens": "Hyphens",
+    "generate": "Generate",
+    "copy_all": "Copy all",
+    "inspect": "Inspect an ID",
+    "inspect_hint": "Paste a UUID v7 or ULID to read its timestamp",
+    "no_time": "This ID carries no timestamp",
+    "created": "Created",
+    "uuid4_desc": "Random UUID — the universal default",
+    "uuid7_desc": "Time-ordered UUID — great for database keys",
+    "ulid_desc": "26 chars, sortable, URL-safe",
+    "nanoid_desc": "Short 21-char URL-safe ID",
+    "objectId_desc": "MongoDB ObjectId (embeds a timestamp)"
+  },
+  "password": {
+    "options": "Options",
+    "length": "Length",
+    "no_ambiguous": "No look-alikes",
+    "batch": "Generate 10",
+    "weak": "Weak",
+    "fair": "Fair",
+    "strong": "Strong",
+    "very_strong": "Very strong"
+  },
+  "qrcode": {
+    "content": "Content",
+    "text": "Text / URL",
+    "text_hint": "Text or a link",
+    "ssid": "Network name (SSID)",
+    "wifi_password": "Password",
+    "ecc": "Error correction",
+    "ecc_hint": "Higher survives damage but is denser",
+    "foreground": "Foreground",
+    "background": "Background",
+    "save_png": "Save PNG",
+    "empty": "Type something to generate a code",
+    "too_long": "Too much data for a QR code"
+  },
+  "time": {
+    "now": "Current Unix time",
+    "input": "Timestamp or date",
+    "use_now": "Now",
+    "invalid": "Not recognised — try 1700000000 or 2026-09-25 13:00:00",
+    "local": "Local time",
+    "relative": "Relative",
+    "calendar": "Calendar",
+    "calendar_value": "{weekday} · week {week} · day {day}",
+    "in": "in {n} {unit}",
+    "ago": "{n} {unit} ago",
+    "units": {
+      "seconds": "seconds",
+      "minutes": "minutes",
+      "hours": "hours",
+      "days": "days",
+      "months": "months",
+      "years": "years"
+    },
+    "weekdays": {
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday",
+      "7": "Sunday"
+    },
+    "source": {
+      "unix_seconds": "Unix seconds",
+      "unix_milliseconds": "Unix milliseconds",
+      "unix_microseconds": "Unix microseconds",
+      "unix_nanoseconds": "Unix nanoseconds",
+      "iso": "Date/time",
+      "rfc2822": "RFC 2822"
+    }
+  },
+  "cron": {
+    "syntax": "min hour day month weekday · supports * , - / names like MON/JAN and @daily macros",
+    "fields": "Fields",
+    "next_runs": "Next 12 runs",
+    "every": "every",
+    "minute": "Minute",
+    "hour": "Hour",
+    "day": "Day of month",
+    "month": "Month",
+    "weekday": "Weekday",
+    "p_every_minute": "Every minute",
+    "p_every_5": "Every 5 min",
+    "p_hourly": "Hourly",
+    "p_daily_9": "Daily 9:00",
+    "p_weekdays": "Weekdays 9:00",
+    "p_weekly": "Sundays 0:00",
+    "p_monthly": "Monthly",
+    "p_yearly": "Yearly"
+  },
+  "tasks": {
+    "title": "Tasks",
+    "subtitle": "Background work from every tool",
+    "cancel_all": "Cancel all",
+    "clear_finished": "Clear finished",
+    "all": "All",
+    "active": "Active",
+    "completed": "Done",
+    "failed": "Failed",
+    "empty_title": "No tasks yet",
+    "empty_message": "Start something in any tool — tasks show up here while you keep working.",
+    "empty_filter": "Nothing matches this filter",
+    "retry": "Retry",
+    "log": "Log",
+    "log_empty": "No output yet",
+    "step": "Step {step}",
+    "elapsed": "{t} elapsed",
+    "eta": "~{t} left",
+    "status": {
+      "queued": "Queued",
+      "running": "Running",
+      "completed": "Done",
+      "failed": "Failed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Appearance, engine and output preferences",
+    "appearance": "Appearance",
+    "theme": "Theme",
+    "theme_system": "System",
+    "theme_light": "Light",
+    "theme_dark": "Dark",
+    "language": "Language",
+    "engine": "Media engine",
+    "engine_version": "Version",
+    "encoders": "Encoders",
+    "gpu_encoders": "Hardware encoders",
+    "engine_dir": "FFmpeg location",
+    "engine_auto": "Use the built-in FFmpeg (recommended)",
+    "engine_source": "Source",
+    "source_bundled": "Built-in",
+    "source_custom": "Custom",
+    "source_system": "System",
+    "native_decode": "In-process decoding",
+    "native_on": "On (media info, thumbnails, previews)",
+    "native_off": "Off (using subprocesses)",
+    "reset": "Reset",
+    "choose": "Choose…",
+    "redetect": "Detect again",
+    "output": "Output",
+    "output_location": "Save to",
+    "output_custom": "Custom folder",
+    "output_hint": "Existing files are never overwritten — duplicates get (1), (2)…",
+    "performance": "Tasks",
+    "concurrency": "Parallel tasks",
+    "concurrency_hint": "1–2 recommended for GPU encoding or large files",
+    "about": "About",
+    "version": "Version",
+    "privacy": "Privacy",
+    "privacy_value": "All files are processed locally and never uploaded"
+  }
+}

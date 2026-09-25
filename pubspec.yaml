@@ -1,0 +1,36 @@
+name: super_ffmpeg
+description: "Super Toolbox — an all-in-one desktop toolbox. Media (FFmpeg) is the first module."
+publish_to: 'none'
+version: 0.2.0+2
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^3.4.3
+  easy_localization: ^3.0.8
+  go_router: ^18.0.1
+  file_picker: ^8.1.7
+  path: ^1.9.0
+  desktop_drop: ^0.8.4
+  shared_preferences: ^2.5.5
+  crypto: ^3.0.7
+  ffi: ^2.2.0
+  re_editor: ^0.10.0
+  re_highlight: ^0.0.3
+  webview_flutter: ^4.14.1
+  markdown: ^7.3.1
+  yaml: ^3.1.4
+  qr: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/translations/

@@ -1,0 +1,887 @@
+{
+  "app": {
+    "tagline": "本地全能工具箱"
+  },
+  "common": {
+    "cancel": "取消",
+    "clear": "清空",
+    "copied": "已复制到剪贴板",
+    "copy": "复制",
+    "open": "打开",
+    "open_folder": "打开文件夹",
+    "remove": "移除",
+    "reveal": "在访达中显示",
+    "input": "输入",
+    "output": "输出",
+    "paste": "粘贴",
+    "swap": "交换",
+    "sample": "示例",
+    "save": "保存",
+    "saved": "已保存到 {path}",
+    "open_file": "打开文件",
+    "export_html": "导出 HTML",
+    "undo": "撤销",
+    "chars": "{n} 个字符",
+    "chars_unit": "字符",
+    "bytes": "{n} 字节",
+    "not_text": "不是文本文件",
+    "drop_to_open": "松开以打开文件",
+    "preview_unavailable": "当前环境不支持内嵌预览"
+  },
+  "nav": {
+    "home": "首页",
+    "tasks": "任务中心",
+    "settings": "设置",
+    "search": "搜索工具…",
+    "engine_missing": "未找到 FFmpeg",
+    "engine_detecting": "正在检测引擎…"
+  },
+  "palette": {
+    "hint": "搜索工具、页面…",
+    "empty": "没有匹配的工具"
+  },
+  "categories": {
+    "media": "媒体",
+    "image": "图片",
+    "data": "数据 · JSON",
+    "web": "前端开发",
+    "encode": "编码与加密",
+    "text": "文本",
+    "generate": "生成与时间",
+    "file": "文件"
+  },
+  "home": {
+    "title": "今天想处理点什么？",
+    "subtitle": "所有处理都在本机完成，不上传任何文件 · {n} 个工具可用",
+    "search": "搜索工具，例如「压缩」「GIF」「提取音频」",
+    "recent": "最近使用",
+    "soon": "即将推出",
+    "coming_soon_toast": "这个工具正在路上，敬请期待",
+    "engine": "媒体引擎",
+    "engine_missing": "未安装 FFmpeg",
+    "gpu": "硬件加速",
+    "gpu_none": "不可用（使用 CPU）",
+    "tasks": "任务",
+    "tasks_value": "{active} 进行中 · {done} 已完成",
+    "drop_title": "拖入任意文件",
+    "drop_hint": "视频音频进媒体工作室，JSON / YAML / CSV / Markdown / HTML 自动打开对应工具，其它文件计算校验值"
+  },
+  "tools": {
+    "convert": {
+      "name": "格式转换",
+      "desc": "转换容器与编码，支持 GPU 加速"
+    },
+    "compress": {
+      "name": "视频压缩",
+      "desc": "按画质或目标大小缩小视频"
+    },
+    "trim": {
+      "name": "剪辑",
+      "desc": "截取片段，支持无损快速剪切"
+    },
+    "audio": {
+      "name": "音频提取与转换",
+      "desc": "提取音轨、转格式、响度标准化"
+    },
+    "gif": {
+      "name": "GIF 制作",
+      "desc": "高质量调色板 GIF 动图"
+    },
+    "transform": {
+      "name": "变速与画面",
+      "desc": "变速、旋转翻转、转竖屏"
+    },
+    "concat": {
+      "name": "视频合并",
+      "desc": "按顺序拼接多个视频"
+    },
+    "frames": {
+      "name": "截图与抽帧",
+      "desc": "截图、按间隔抽帧、缩略图墙"
+    },
+    "inspect": {
+      "name": "媒体信息",
+      "desc": "查看容器与每条流的详细参数"
+    },
+    "cli": {
+      "name": "命令行",
+      "desc": "自定义 FFmpeg 参数，任务化执行"
+    },
+    "image_convert": {
+      "name": "图片压缩与转换",
+      "desc": "HEIC / WebP / PNG → JPG、AVIF，批量缩放，清除 EXIF"
+    },
+    "json": {
+      "name": "JSON 格式化",
+      "desc": "格式化、压缩、校验、树视图与 JSONPath 查询"
+    },
+    "json_diff": {
+      "name": "JSON 对比",
+      "desc": "忽略键顺序的结构化差异"
+    },
+    "json_yaml": {
+      "name": "JSON ↔ YAML",
+      "desc": "JSON 与 YAML 双向转换"
+    },
+    "json_code": {
+      "name": "JSON 生成代码",
+      "desc": "生成 TypeScript / Dart / Go / Swift / Kotlin 模型"
+    },
+    "csv_json": {
+      "name": "CSV ↔ JSON",
+      "desc": "表格与 JSON 互转，带表格预览"
+    },
+    "html_preview": {
+      "name": "HTML 实时预览",
+      "desc": "HTML + CSS + JS 即写即看，带控制台"
+    },
+    "js_runner": {
+      "name": "JS 运行",
+      "desc": "本地运行 JavaScript，查看输出与结果"
+    },
+    "markdown": {
+      "name": "Markdown 编辑器",
+      "desc": "编写与实时预览，导出 HTML"
+    },
+    "css": {
+      "name": "CSS 格式化",
+      "desc": "美化或压缩样式表"
+    },
+    "color": {
+      "name": "颜色工具",
+      "desc": "取色、格式转换、对比度检查"
+    },
+    "regex": {
+      "name": "正则测试",
+      "desc": "实时高亮匹配、分组与替换"
+    },
+    "base64": {
+      "name": "Base64",
+      "desc": "文本与文件编解码，图片预览"
+    },
+    "encode": {
+      "name": "编码转换",
+      "desc": "URL、HTML 实体、Unicode、Hex、二进制"
+    },
+    "url": {
+      "name": "URL 解析",
+      "desc": "拆解 URL 各部分与查询参数"
+    },
+    "hash": {
+      "name": "哈希校验",
+      "desc": "MD5 / SHA / CRC32、HMAC、文件校验"
+    },
+    "number_base": {
+      "name": "进制转换",
+      "desc": "二、八、十、十六进制互转与位视图"
+    },
+    "timestamp": {
+      "name": "时间戳转换",
+      "desc": "Unix 时间戳与日期互转"
+    },
+    "jwt": {
+      "name": "JWT 工具",
+      "desc": "解码、校验签名、生成 JWT"
+    },
+    "diff": {
+      "name": "文本对比",
+      "desc": "并排比较两段文本，精确到词"
+    },
+    "case": {
+      "name": "命名转换",
+      "desc": "驼峰、下划线、短横线等一键转换"
+    },
+    "text_tools": {
+      "name": "文本处理",
+      "desc": "字数统计、排序、去重、清理"
+    },
+    "lorem": {
+      "name": "占位文本",
+      "desc": "生成中英文假文"
+    },
+    "uuid": {
+      "name": "UUID 生成",
+      "desc": "UUID v4/v7、ULID、Nano ID"
+    },
+    "password": {
+      "name": "密码生成",
+      "desc": "安全随机密码与强度评估"
+    },
+    "qrcode": {
+      "name": "二维码",
+      "desc": "文本、链接、Wi-Fi 二维码，导出 PNG"
+    },
+    "cron": {
+      "name": "Cron 表达式",
+      "desc": "解析表达式并预览下次运行时间"
+    },
+    "rename": {
+      "name": "批量重命名",
+      "desc": "规则化批量修改文件名"
+    },
+    "duplicates": {
+      "name": "重复文件查找",
+      "desc": "按内容查找重复文件"
+    }
+  },
+  "media": {
+    "options": "参数设置",
+    "advanced": "高级选项",
+    "original": "原始",
+    "auto": "自动",
+    "file": "文件",
+    "files_count": "{n} 个文件",
+    "add_files": "添加文件",
+    "replace": "更换文件",
+    "probing": "正在读取媒体信息…",
+    "unreadable": "无法识别",
+    "unreadable_skipped": "{n} 个文件无法识别，将被跳过",
+    "ignored_files": "已忽略 {n} 个不支持的文件",
+    "queued": "已加入 {n} 个任务",
+    "view_tasks": "查看",
+    "output_to": "输出到",
+    "output_next_to_source": "源文件所在文件夹",
+    "output_choose": "选择文件夹…",
+    "command": "命令",
+    "output_preview": "输出预览",
+    "more_outputs": "以及另外 {n} 个文件",
+    "more_commands": "另有 {n} 条类似命令（每个文件一条）",
+    "drop": {
+      "title": "拖放文件到这里",
+      "title_multi": "拖放文件到这里，支持多个",
+      "release": "松开以添加",
+      "or": "或 ",
+      "browse": "点击选择文件",
+      "more": "可继续拖入更多文件"
+    },
+    "accept": {
+      "video": "支持 MP4、MOV、MKV、WebM、AVI 等视频格式",
+      "audio": "支持 MP3、M4A、WAV、FLAC 等音频格式",
+      "media": "支持常见视频与音频格式",
+      "any": "任意文件（可选）"
+    },
+    "engine_missing": {
+      "title": "未找到 FFmpeg",
+      "message": "应用内置的 FFmpeg 缺失（开发环境请先运行 scripts/build_ffmpeg.sh），也没有找到系统 FFmpeg。可以临时安装系统版本，或在设置中指定所在文件夹。",
+      "retry": "重新检测",
+      "settings": "打开设置"
+    },
+    "quality": {
+      "label": "画质",
+      "high": "高画质",
+      "balanced": "均衡",
+      "small": "小体积"
+    },
+    "resolution": {
+      "label": "分辨率",
+      "hint": "按短边缩放，不会放大"
+    },
+    "gpu": {
+      "label": "GPU 硬件加速",
+      "hint": "可用时优先使用 VideoToolbox / NVENC 等硬件编码器，速度更快"
+    },
+    "convert": {
+      "action": "开始转换 · {n}",
+      "container": "输出格式",
+      "codec": "视频编码",
+      "codec_unavailable": "当前 FFmpeg 不支持该编码器",
+      "copy": "直接复制",
+      "copy_hint": "不重新编码，只更换容器，速度极快",
+      "fps": "帧率",
+      "audio": "音频",
+      "audio_auto": "自动编码",
+      "audio_copy": "保持原样",
+      "audio_remove": "移除",
+      "speed": "编码速度",
+      "speed_hint": "越慢压缩率越高（仅影响 CPU 编码）",
+      "speed_fast": "快",
+      "speed_medium": "标准",
+      "speed_slow": "慢"
+    },
+    "compress": {
+      "action": "开始压缩 · {n}",
+      "mode": "压缩方式",
+      "by_quality": "按画质",
+      "by_size": "按目标大小",
+      "level": "压缩强度",
+      "level_hint": "强度越高体积越小，画质损失越多",
+      "light": "轻度",
+      "standard": "标准",
+      "strong": "强力",
+      "codec": "编码",
+      "h264": "H.264 · 兼容性最好",
+      "hevc": "HEVC · 体积更小",
+      "target": "目标大小",
+      "target_hint": "两遍编码精确控制码率，结果不会超过设定值",
+      "custom_mb": "自定义大小",
+      "budget": "视频 {video} kbps + 音频 {audio} kbps",
+      "will_downscale": "码率较低，将自动降至 {res}",
+      "auto_res_hint": "「自动」会在码率不足时降低分辨率",
+      "source_size": "原始大小 {size}"
+    },
+    "trim": {
+      "action": "开始剪辑",
+      "mode": "剪切方式",
+      "fast": "快速无损",
+      "precise": "精确剪切",
+      "fast_hint": "不重新编码，秒级完成；起点会对齐到最近的关键帧，可能有少量偏差。",
+      "precise_hint": "重新编码以精确到帧，耗时较长，输出为 MP4。",
+      "range": "剪辑范围",
+      "start": "起点",
+      "end": "终点",
+      "length": "时长 {len}"
+    },
+    "audio": {
+      "action": "开始处理 · {n}",
+      "format": "输出格式",
+      "lossless": "无损",
+      "original": "原始音轨",
+      "original_hint": "不重新编码，按原格式无损提取音轨",
+      "bitrate": "码率 (kbps)",
+      "sample_rate": "采样率",
+      "channels": "声道",
+      "mono": "单声道",
+      "stereo": "立体声",
+      "normalize": "响度标准化",
+      "normalize_hint": "EBU R128 标准，统一到 -16 LUFS，适合播客与视频平台",
+      "gain": "音量增益"
+    },
+    "gif": {
+      "action": "生成 GIF · {n}",
+      "start": "起始时间",
+      "duration": "时长",
+      "fps": "帧率",
+      "fps_hint": "帧率越高越流畅，文件也越大",
+      "width": "宽度",
+      "dither": "抖动算法",
+      "dither_hint": "影响色彩过渡与文件大小",
+      "dither_smooth": "平滑",
+      "dither_pattern": "网点",
+      "dither_diffuse": "扩散",
+      "dither_none": "无",
+      "loop": "循环播放",
+      "first_frame": "起始帧预览",
+      "segment": "片段",
+      "segment_selection": "来自时间线选区",
+      "segment_playhead": "未设置选区：从播放头起 5 秒。在时间线上拖动两端手柄可调整。"
+    },
+    "transform": {
+      "action": "开始处理 · {n}",
+      "speed": "播放速度",
+      "speed_hint": "音频自动变速且保持音调",
+      "rotate": "旋转",
+      "rotate_none": "不旋转",
+      "flip": "翻转",
+      "flip_h": "水平翻转",
+      "flip_v": "垂直翻转",
+      "framing": "画幅",
+      "framing_hint": "以模糊背景填充，适合抖音、Shorts、Reels",
+      "vertical": "竖屏 9:16",
+      "square": "方形 1:1",
+      "landscape": "横屏 16:9",
+      "mute": "移除声音"
+    },
+    "concat": {
+      "action": "开始合并",
+      "mode": "合并方式",
+      "compatible": "兼容模式",
+      "fast": "快速模式",
+      "compatible_hint": "统一分辨率与帧率后重新编码，任意素材都能合并。拖动左侧手柄调整顺序。",
+      "fast_hint": "直接拼接不重新编码，要求所有片段的编码、分辨率、帧率完全一致。",
+      "clips": "片段数",
+      "total": "总时长",
+      "order": "合并顺序",
+      "need_two": "素材库里至少需要 2 个文件，点击上方「添加文件」"
+    },
+    "frames": {
+      "action": "开始截图 · {n}",
+      "mode": "方式",
+      "single": "单帧截图",
+      "interval": "按间隔抽帧",
+      "sheet": "缩略图墙",
+      "at": "时间点",
+      "every": "间隔",
+      "every_n": "每 {n} 秒",
+      "grid": "宫格",
+      "width": "图片宽度",
+      "tile_width": "单格宽度",
+      "format": "图片格式",
+      "preview": "预览"
+    },
+    "inspect": {
+      "container": "容器",
+      "duration": "时长",
+      "size": "文件大小",
+      "bitrate": "码率",
+      "path": "路径",
+      "tags": "元数据标签",
+      "raw": "原始数据 (ffprobe JSON)",
+      "show_json": "展开 JSON",
+      "video": "视频",
+      "audio": "音频",
+      "subtitle": "字幕",
+      "data": "数据",
+      "cover": "封面图",
+      "default": "默认",
+      "codec": "编码",
+      "resolution": "分辨率",
+      "fps": "帧率",
+      "pixfmt": "像素格式",
+      "transfer": "传输特性",
+      "sample_rate": "采样率",
+      "channels": "声道",
+      "language": "语言",
+      "title": "标题"
+    },
+    "cli": {
+      "action": "运行 · {n}",
+      "args": "FFmpeg 参数",
+      "args_hint": "占位符：{input} 输入文件，{dir} 所在文件夹，{name} 不含扩展名的文件名。多个文件会各自运行一次。",
+      "templates": "常用模板",
+      "tpl_remux": "转封装 MKV",
+      "tpl_reverse": "倒放",
+      "tpl_denoise": "视频降噪",
+      "tpl_subs": "导出字幕",
+      "tpl_waveform": "音频波形图",
+      "tpl_stabilize": "防抖"
+    },
+    "errors": {
+      "encoder_missing": "当前 FFmpeg 缺少 {codec} 编码器",
+      "unknown_duration": "无法获取时长",
+      "target_too_small": "目标大小过小，至少需要约 {min} MB",
+      "invalid_range": "剪辑范围无效",
+      "no_audio": "文件中没有音频",
+      "no_video": "文件中没有视频画面",
+      "nothing_to_do": "请至少选择一项调整",
+      "invalid_speed": "速度需在 0.25× 到 4× 之间",
+      "need_two_files": "至少需要 2 个文件",
+      "probe_pending": "正在读取媒体信息…",
+      "invalid_interval": "间隔无效",
+      "bad_quotes": "引号未闭合",
+      "empty_command": "请输入参数",
+      "cli_needs_input": "模板包含 {input}，请先添加文件",
+      "size_exceeded": "无法压缩到目标大小（结果 {size} MB > {limit} MB），请降低分辨率或调高目标"
+    }
+  },
+  "image": {
+    "action": "开始处理 · {n}",
+    "format": "输出格式",
+    "avif_hint": "体积通常只有 JPG 的 1/3，现代浏览器与系统均支持",
+    "lossless": "无损",
+    "keep_format": "保持原格式",
+    "quality": "质量",
+    "quality_hint": "80 左右肉眼几乎无差别，体积大幅缩小",
+    "max_side": "最长边",
+    "max_side_hint": "只缩小不放大",
+    "privacy": "会移除 EXIF、GPS 定位等元数据，方向会自动校正",
+    "drop": "拖入图片",
+    "drop_hint": "支持 HEIC、JPG、PNG、WebP、AVIF、TIFF 等，可一次拖入多张"
+  },
+  "studio": {
+    "title": "媒体工作室",
+    "subtitle": "拖入一个视频，转换、压缩、剪辑、GIF、截图……所有操作都围绕它完成",
+    "sidebar_hint": "拖入视频开始",
+    "files_loaded": "已载入 {n} 个文件",
+    "drop_title": "拖入视频或音频",
+    "drop_add": "松开以加入素材库",
+    "capabilities": "载入后可以",
+    "close_all": "清空素材库",
+    "audio_only": "音频文件",
+    "in": "入点",
+    "out": "出点",
+    "length": "选区",
+    "mark_in": "设为入点 I",
+    "mark_out": "设为出点 O",
+    "clear_range": "全选",
+    "range_hint": "在时间线上拖动两端手柄，或按 I / O 在播放头处设置；← → 逐帧移动",
+    "range_only": "仅选区 {from}–{to}",
+    "range_only_hint": "只处理时间线上选中的片段",
+    "scope_current": "当前文件",
+    "scope_all": "全部 {n} 个",
+    "frame_at_playhead": "截取播放头所在帧 · 在时间线上点击或拖动定位",
+    "tabs": {
+      "convert": "转换",
+      "compress": "压缩",
+      "trim": "剪辑",
+      "audio": "音频",
+      "gif": "GIF",
+      "transform": "变速画面",
+      "concat": "合并",
+      "frames": "截图",
+      "inspect": "信息",
+      "cli": "命令行"
+    },
+    "errors": {
+      "need_range": "请先在时间线上选择要保留的片段"
+    }
+  },
+  "json": {
+    "format": "格式化",
+    "minify": "压缩",
+    "escape": "转义",
+    "unescape": "去转义",
+    "indent": "缩进",
+    "sort_keys": "键排序",
+    "text": "文本",
+    "tree": "树",
+    "hint": "粘贴或拖入 JSON…",
+    "jump": "定位",
+    "valid": "有效 JSON · {objects} 个对象 · {arrays} 个数组 · {values} 个值 · 深度 {depth}",
+    "valid_short": "有效 JSON",
+    "expand_all": "全部展开",
+    "collapse_all": "全部折叠",
+    "copy_path": "复制路径",
+    "copy_value": "复制值"
+  },
+  "json_diff": {
+    "left": "原始 JSON",
+    "right": "新 JSON",
+    "result": "差异",
+    "structural": "结构",
+    "side_by_side": "并排",
+    "added": "新增",
+    "removed": "删除",
+    "changed": "修改",
+    "type_changed": "类型变化",
+    "identical": "两个 JSON 在结构上完全一致",
+    "fix_input": "两侧都需要是有效 JSON",
+    "key_order_ignored": "已忽略键顺序"
+  },
+  "json_code": {
+    "root": "根类型名",
+    "hint": "数组元素会合并推断，缺失字段标为可选"
+  },
+  "csv": {
+    "delimiter": "分隔符",
+    "infer": "推断类型",
+    "table": "表格",
+    "rows": "{n} 行数据"
+  },
+  "html_preview": {
+    "preview": "预览",
+    "console": "控制台",
+    "run": "运行",
+    "auto": "自动刷新",
+    "console_empty": "console.log 的输出会显示在这里"
+  },
+  "js_runner": {
+    "run": "运行 ⌘↩",
+    "hint": "⌘ Enter 运行 · 最后一个表达式作为结果显示 · 每次运行都是全新环境",
+    "empty": "点击运行，输出会显示在这里",
+    "engine": "引擎：JavaScriptCore（macOS 内置），5 秒超时",
+    "unavailable": "当前系统没有可用的 JavaScript 引擎",
+    "done": "运行完成",
+    "failed": "运行出错",
+    "timeout": "超时已终止",
+    "sample_basics": "基础：数组与对象",
+    "sample_async": "异步：Promise 与定时器",
+    "sample_classes": "类与集合"
+  },
+  "markdown": {
+    "edit": "编辑",
+    "split": "分栏",
+    "stats": "{words} 词 · {chars} 字符 · 约 {min} 分钟阅读",
+    "heading": "标题",
+    "bold": "粗体",
+    "italic": "斜体",
+    "strike": "删除线",
+    "code": "行内代码",
+    "link": "链接",
+    "image": "图片",
+    "list": "无序列表",
+    "numbered": "有序列表",
+    "task": "任务列表",
+    "quote": "引用",
+    "code_block": "代码块",
+    "table": "表格",
+    "hr": "分割线"
+  },
+  "color": {
+    "picker": "取色",
+    "formats": "格式",
+    "contrast": "对比度 (WCAG)",
+    "scale": "明暗色阶 · 点击选用",
+    "invalid": "无法识别的颜色"
+  },
+  "regex": {
+    "pattern_hint": "输入正则表达式",
+    "matches": "{n} 处匹配",
+    "library": "常用正则",
+    "test_text": "测试文本",
+    "match_list": "匹配结果",
+    "replace": "替换预览",
+    "flag_i": "忽略大小写",
+    "flag_m": "多行：^ $ 匹配每行",
+    "flag_s": "点号匹配换行",
+    "flag_u": "Unicode"
+  },
+  "encode": {
+    "encode": "编码",
+    "decode": "解码"
+  },
+  "base64": {
+    "text": "文本",
+    "file": "文件",
+    "plain": "原文",
+    "url_safe": "URL 安全",
+    "drop": "拖入或点击选择文件",
+    "drop_hint": "图片会显示预览，可复制为 Data URI",
+    "binary_detected": "解码结果是二进制文件（{type}），可保存为文件",
+    "truncated": "（内容过长，仅显示前 200,000 个字符；复制按钮会复制全部）"
+  },
+  "url": {
+    "parts": "组成部分",
+    "params": "查询参数 · {n}",
+    "no_params": "没有查询参数",
+    "invalid": "不是有效的 URL",
+    "scheme": "协议",
+    "user": "用户信息",
+    "host": "主机",
+    "port": "端口",
+    "default": "默认",
+    "path": "路径",
+    "segments": "路径分段",
+    "query": "查询串",
+    "fragment": "锚点",
+    "origin": "源"
+  },
+  "jwt": {
+    "decode": "解码与校验",
+    "encode": "生成",
+    "token": "令牌",
+    "header": "头部 Header",
+    "payload": "载荷 Payload",
+    "secret": "密钥（HMAC）",
+    "secret_b64": "Base64 密钥",
+    "structure": "头部 · 载荷 · 签名",
+    "expired": "已过期",
+    "valid_until": "有效",
+    "not_yet": "尚未生效",
+    "sig_valid": "签名有效",
+    "sig_invalid": "签名无效：密钥不匹配或令牌被篡改",
+    "sig_unchecked": "输入密钥以校验签名",
+    "sig_unsupported": "暂不支持校验 {alg} 签名（仅支持 HS256/384/512）",
+    "open_decoder": "在解码器中打开"
+  },
+  "hash": {
+    "digests": "摘要",
+    "hmac_hint": "HMAC 密钥（可选）",
+    "uppercase": "大写",
+    "verify_hint": "粘贴期望的哈希值进行比对",
+    "match": "匹配 {alg} ✓",
+    "no_match": "没有匹配的算法",
+    "drop": "拖入文件计算校验值",
+    "drop_hint": "流式计算，大文件也不占内存",
+    "choose": "选择文件"
+  },
+  "number_base": {
+    "results": "转换结果",
+    "bin": "二进制",
+    "oct": "八进制",
+    "dec": "十进制",
+    "hex": "十六进制",
+    "char": "字符",
+    "bits": "位视图 · 点击翻转",
+    "too_big": "数值超出 {bits} 位"
+  },
+  "diff": {
+    "original": "原文",
+    "changed": "修改后",
+    "result": "对比结果",
+    "ignore_space": "忽略空白",
+    "ignore_case": "忽略大小写",
+    "only_changes": "只看差异",
+    "identical": "两段文本完全相同",
+    "copy_patch": "复制补丁"
+  },
+  "case": {
+    "results": "转换结果 · 点击复制",
+    "hint": "每行分别转换"
+  },
+  "text_tools": {
+    "characters": "字符",
+    "no_spaces": "不含空白",
+    "words": "词 / 字",
+    "lines": "行",
+    "paragraphs": "段落",
+    "bytes": "UTF-8 大小",
+    "reading": "阅读时间",
+    "ops": {
+      "sortAsc": "升序排序",
+      "sortDesc": "降序排序",
+      "sortNatural": "自然排序 (file2 < file10)",
+      "sortLength": "按长度排序",
+      "reverse": "反转行序",
+      "unique": "去除重复行",
+      "removeEmpty": "删除空行",
+      "trim": "去除首尾空白",
+      "collapseSpaces": "合并多余空格",
+      "number": "添加行号",
+      "joinLines": "合并为一行",
+      "shuffle": "随机打乱"
+    }
+  },
+  "lorem": {
+    "paragraphs": "段落",
+    "sentences": "每段句数",
+    "regenerate": "重新生成"
+  },
+  "uuid": {
+    "count": "数量",
+    "hyphens": "连字符",
+    "generate": "生成",
+    "copy_all": "全部复制",
+    "inspect": "解析 ID",
+    "inspect_hint": "粘贴 UUID v7 或 ULID 查看生成时间",
+    "no_time": "这个 ID 不包含时间信息",
+    "created": "生成时间",
+    "uuid4_desc": "随机 UUID，最通用",
+    "uuid7_desc": "按时间排序的 UUID，适合做数据库主键",
+    "ulid_desc": "26 位、可排序、URL 安全",
+    "nanoid_desc": "21 位短 ID，URL 安全",
+    "objectId_desc": "MongoDB ObjectId（含秒级时间戳）"
+  },
+  "password": {
+    "options": "选项",
+    "length": "长度",
+    "no_ambiguous": "排除易混淆字符",
+    "batch": "批量生成 10 个",
+    "weak": "弱",
+    "fair": "一般",
+    "strong": "强",
+    "very_strong": "非常强"
+  },
+  "qrcode": {
+    "content": "内容",
+    "text": "文本 / 链接",
+    "text_hint": "输入文本或链接",
+    "ssid": "网络名称 (SSID)",
+    "wifi_password": "密码",
+    "ecc": "容错级别",
+    "ecc_hint": "级别越高越耐污损，码也越密",
+    "foreground": "前景色",
+    "background": "背景色",
+    "save_png": "保存 PNG",
+    "empty": "输入内容生成二维码",
+    "too_long": "内容太长，无法生成"
+  },
+  "time": {
+    "now": "当前 Unix 时间戳",
+    "input": "时间戳或日期",
+    "use_now": "现在",
+    "invalid": "无法识别，试试 1700000000 或 2026-09-25 13:00:00",
+    "local": "本地时间",
+    "relative": "相对时间",
+    "calendar": "日历",
+    "calendar_value": "{weekday} · 第 {week} 周 · 第 {day} 天",
+    "in": "{n} {unit}后",
+    "ago": "{n} {unit}前",
+    "units": {
+      "seconds": "秒",
+      "minutes": "分钟",
+      "hours": "小时",
+      "days": "天",
+      "months": "个月",
+      "years": "年"
+    },
+    "weekdays": {
+      "1": "周一",
+      "2": "周二",
+      "3": "周三",
+      "4": "周四",
+      "5": "周五",
+      "6": "周六",
+      "7": "周日"
+    },
+    "source": {
+      "unix_seconds": "识别为 Unix 秒",
+      "unix_milliseconds": "识别为 Unix 毫秒",
+      "unix_microseconds": "识别为 Unix 微秒",
+      "unix_nanoseconds": "识别为 Unix 纳秒",
+      "iso": "识别为日期时间",
+      "rfc2822": "识别为 RFC 2822"
+    }
+  },
+  "cron": {
+    "syntax": "分 时 日 月 周 · 支持 * , - / 与 MON、JAN 等名称，以及 @daily 等宏",
+    "fields": "字段解析",
+    "next_runs": "接下来 12 次运行",
+    "every": "每个",
+    "minute": "分钟",
+    "hour": "小时",
+    "day": "日",
+    "month": "月",
+    "weekday": "星期",
+    "p_every_minute": "每分钟",
+    "p_every_5": "每 5 分钟",
+    "p_hourly": "每小时",
+    "p_daily_9": "每天 9:00",
+    "p_weekdays": "工作日 9:00",
+    "p_weekly": "每周日 0:00",
+    "p_monthly": "每月 1 日",
+    "p_yearly": "每年 1 月 1 日"
+  },
+  "tasks": {
+    "title": "任务中心",
+    "subtitle": "所有工具的后台任务都在这里",
+    "cancel_all": "全部取消",
+    "clear_finished": "清除已结束",
+    "all": "全部",
+    "active": "进行中",
+    "completed": "已完成",
+    "failed": "失败/取消",
+    "empty_title": "还没有任务",
+    "empty_message": "在任意工具中点击开始，任务会出现在这里，你可以继续做别的事。",
+    "empty_filter": "没有符合条件的任务",
+    "retry": "重试",
+    "log": "日志",
+    "log_empty": "暂无输出",
+    "step": "步骤 {step}",
+    "elapsed": "已用 {t}",
+    "eta": "剩余约 {t}",
+    "status": {
+      "queued": "排队中",
+      "running": "进行中",
+      "completed": "已完成",
+      "failed": "失败",
+      "cancelled": "已取消"
+    }
+  },
+  "settings": {
+    "title": "设置",
+    "subtitle": "外观、引擎与输出偏好",
+    "appearance": "外观",
+    "theme": "主题",
+    "theme_system": "跟随系统",
+    "theme_light": "浅色",
+    "theme_dark": "深色",
+    "language": "语言",
+    "engine": "媒体引擎",
+    "engine_version": "版本",
+    "encoders": "可用编码器",
+    "gpu_encoders": "硬件编码器",
+    "engine_dir": "FFmpeg 位置",
+    "engine_auto": "使用内置 FFmpeg（推荐）",
+    "engine_source": "来源",
+    "source_bundled": "内置",
+    "source_custom": "自定义",
+    "source_system": "系统",
+    "native_decode": "进程内解码",
+    "native_on": "已启用（媒体信息、缩略图、预览帧）",
+    "native_off": "未启用（改用子进程）",
+    "reset": "恢复自动",
+    "choose": "选择…",
+    "redetect": "重新检测",
+    "output": "输出",
+    "output_location": "保存位置",
+    "output_custom": "指定文件夹",
+    "output_hint": "不会覆盖已有文件，重名时自动添加 (1)、(2) 后缀。",
+    "performance": "任务",
+    "concurrency": "同时运行任务数",
+    "concurrency_hint": "GPU 编码或大文件建议 1–2",
+    "about": "关于",
+    "version": "版本",
+    "privacy": "隐私",
+    "privacy_value": "所有文件仅在本机处理，不联网上传"
+  }
+}
